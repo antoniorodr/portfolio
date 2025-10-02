@@ -1,81 +1,93 @@
-# Portfolio
+<h1 align="center">Portfolio</h1>
 
-A personal portfolio website to showcase my projects, skills, and experience as a developer.
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/antoniorodr/portfolio?color=56BEB8">
 
-## Table of Contents
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/antoniorodr/portfolio?color=56BEB8">
 
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/antoniorodr/portfolio?color=56BEB8">
 
-## About
+  <img alt="License" src="https://img.shields.io/github/license/antoniorodr/portfolio?color=56BEB8">
 
-This repository contains the source code for my personal portfolio website. The site is designed to present my professional background, highlight selected projects, and provide a means of contacting me.
+  <img alt="Github issues" src="https://img.shields.io/github/issues/antoniorodr/portfolio?color=56BEB8" />
 
-## Features
+  <img alt="Github forks" src="https://img.shields.io/github/forks/antoniorodr/portfolio?color=56BEB8" />
 
-- Responsive and modern design
-- Project showcase with descriptions and links
-- About section with skills and experience
-- Contact form or contact information
-- Easy to customize and extend
+  <img alt="Github stars" src="https://img.shields.io/github/stars/antoniorodr/portfolio?color=56BEB8" />
+</p>
 
-## Tech Stack
+<!-- Status -->
 
-- **Frontend:** [Tailwind CSS](https://tailwindcss.com/)
-- **UI components:** [DaisyUI](https://daisyui.com/)
-- **Deployment:** [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/), or [Netlify](https://www.netlify.com/)
+<!-- <h4 align="center">
+	🚧  @antoniorodr/portfolio 🚀 Under construction...  🚧
+</h4>
 
-## Getting Started
+<hr> -->
 
-To get a local copy up and running, follow these steps:
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0;
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/antoniorodr" target="_blank">Author</a>
+</p>
 
-### Prerequisites
+<br>
 
-- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed
+## :dart: About
 
-### Installation
+This is my personal portfolio website, built to showcase my projects, skills, and experience as a developer. The design is clean, modern, and fully responsive.
 
-1. Clone the repo:
+## :sparkles: Features
 
-    ```bash
-    git clone https://github.com/antoniorodr/portfolio.git
-    cd portfolio
-    ```
+:heavy_check_mark: Modern, responsive layout  
+:heavy_check_mark: Project showcase with descriptions and links  
+:heavy_check_mark: About section with skills and experience  
+:heavy_check_mark: Contact information or form  
+:heavy_check_mark: Easy to customize and extend
 
-2. Install dependencies:
+## :rocket: Technologies
 
-    ```bash
-    npm install
-    ```
+This project uses:
 
-3. Start the development server:
+- [Tailwind CSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
+- [Node.js](https://nodejs.org/en/)
 
-    ```bash
-    npm run dev
-    ```
+## :white_check_mark: Requirements
 
-4. Open [http://localhost:3000](http://localhost:3000) to view the site in your browser.
+Before starting, you need to have [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/) installed.
 
-## Usage
+## :checkered_flag: Starting
 
-- Update the content in the relevant source files to customize your portfolio.
-- Add or update projects, skills, and contact info.
-- Deploy to your preferred hosting provider when ready.
+```bash
+# Clone this project
+git clone https://github.com/antoniorodr/portfolio
 
-## Contributing
+# Access
+cd portfolio
 
-Contributions are welcome! Please fork the repository and submit a pull request.
+# Install dependencies
+npm install
 
-## License
+# Run the project (for example with Vite/Next.js)
+npm run dev
 
-This project is licensed under the [MIT License](LICENSE).
+# The server will initialize at http://localhost:3000
+```
 
-## Contact
+## :memo: License
 
-Created by [Antonio Rodriguez](https://github.com/antoniorodr) - feel free to reach out!
+This project is under the MIT license. For more details, see the [LICENSE](LICENSE) file.
+
+## :eyes: Do you like my work?
+
+<a href="https://www.buymeacoffee.com/antoniorodr" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png" alt="Buy Me A Coffee" height="48"></a>
+
+Made with :heart: by <a href="https://github.com/antoniorodr" target="_blank">Antonio Rodriguez</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
