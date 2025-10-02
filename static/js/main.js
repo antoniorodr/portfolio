@@ -91,6 +91,14 @@ let currentPage = 1;
 async function renderProjectsPage() {
     const container = document.getElementById("projects-container");
     if (!container) return;
+    
+    // Preserve current height to prevent "popping"
+    const currentHeight = container.offsetHeight;
+    if (currentHeight > 0) {
+        container.style.minHeight = `${currentHeight}px`;
+        container.style.transition = 'min-height 0.3s ease-in-out';
+    }
+    
     container.innerHTML = ""; // clear previous content
 
     const start = (currentPage - 1) * projectsPerPage;
@@ -103,6 +111,15 @@ async function renderProjectsPage() {
         container.appendChild(projectDiv);
         await loadPartial(proj.url, proj.containerId); // load project partial
     }
+
+    // Remove min-height after content is loaded to allow natural sizing
+    setTimeout(() => {
+        container.style.minHeight = '';
+        // Remove transition after the height change to avoid conflicts with other animations
+        setTimeout(() => {
+            container.style.transition = '';
+        }, 300);
+    }, 50);
 
     // Update page info
     const pageInfo = document.getElementById("page-info");
