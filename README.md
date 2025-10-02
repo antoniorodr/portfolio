@@ -18,12 +18,6 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center">
-	🚧  @antoniorodr/portfolio 🚀 Under construction...  🚧
-</h4>
-
-<hr> -->
-
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0;
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
@@ -72,10 +66,6 @@ cd portfolio
 # Install dependencies
 npm install
 
-# Run the project (for example with Vite/Next.js)
-npm run dev
-
-# The server will initialize at http://localhost:3000
 ```
 
 ## :memo: License
