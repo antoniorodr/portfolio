@@ -1,0 +1,67 @@
+<!-- Card -->
+<div class="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+  <figure class="px-4 pt-4">
+    <img src="static/pictures/portfolio/stressio.png"
+         alt="Stressio"
+         class="rounded-xl w-full h-48 object-cover" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title text-xl font-bold text-base-content">
+      Stressio
+      <div class="badge badge-primary">Web app</div>
+    </h2>
+    <p class="text-base text-base-content/70">
+      A platform for anonymous stress tracking and providing valuable insights in workplace environments.
+    </p>
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-2 my-3">
+      <span class="badge badge-primary">FastAPI</span>
+      <span class="badge badge-secondary">Tailwind</span>
+      <span class="badge badge-accent">Python</span>
+    </div>
+    <!-- Action Buttons -->
+    <div class="card-actions justify-end mt-4 gap-2">
+      <a href="https://stressio.no"
+         target="_blank"
+         class="btn btn-primary btn-sm">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="h-4 w-4"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+        Live Demo
+      </a>
+      <button onclick="document.getElementById('stressio-modal').showModal()"
+              class="btn btn-secondary btn-sm">Read more</button>
+    </div>
+  </div>
+</div>
+<!-- Modal (DaisyUI syntax, requires <dialog> support) -->
+<dialog id="stressio-modal" class="modal">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-lg">Stressio</h3>
+    <p class="py-4">
+      A digital platform for measuring and understanding stress levels in the workplace. Employees can report stress anonymously while managers receive aggregated insights to make informed decisions and improve the work environment.
+      <br />
+      <br />
+      <strong>My role:</strong> Solo developer responsible for the full stack of the platform. Built the frontend using Tailwind CSS and DaisyUI, and implemented the backend with Python and FastAPI. Managed database migrations with Alembic and added internationalization support using Babel.
+      <br />
+      <br />
+      <strong>Key achievements and learnings:</strong>
+      <ul class="list-disc pl-5">
+        <li>Developed a fully functional full-stack application independently, from database to frontend.</li>
+        <li>Designed interactive and responsive dashboards for real-time stress reporting.</li>
+        <li>Ensured data privacy and anonymity, fully compliant with GDPR.</li>
+        <li>Implemented database migrations and multilingual support, improving maintainability and accessibility.</li>
+        <li>
+          Gained extensive experience in project planning, full-stack development, and delivering a polished, production-ready solution.
+        </li>
+      </ul>
+    </p>
+    <div class="modal-action">
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
