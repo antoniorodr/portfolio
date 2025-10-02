@@ -1,5 +1,7 @@
 <h1 align="center">Portfolio</h1>
 
+<img src="./portfolio.jpeg"><br><br>
+
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/antoniorodr/portfolio?color=56BEB8">
 
