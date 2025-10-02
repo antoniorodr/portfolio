@@ -8,7 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
-    --container-md: 28rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;
@@ -1462,9 +1461,6 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
-  .max-w-md {
-    max-width: var(--container-md);
-  }
   .flex-1 {
     flex: 1;
   }
@@ -1782,14 +1778,6 @@
   .italic {
     font-style: italic;
   }
-  .link-hover {
-    text-decoration-line: none;
-    &:hover {
-      @media (hover: hover) {
-        text-decoration-line: underline;
-      }
-    }
-  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1997,16 +1985,6 @@
       padding-inline: calc(var(--spacing) * 0);
     }
   }
-  .sm\:px-8 {
-    @media (width >= 40rem) {
-      padding-inline: calc(var(--spacing) * 8);
-    }
-  }
-  .sm\:py-2 {
-    @media (width >= 40rem) {
-      padding-block: calc(var(--spacing) * 2);
-    }
-  }
   .sm\:py-6 {
     @media (width >= 40rem) {
       padding-block: calc(var(--spacing) * 6);
@@ -2121,19 +2099,9 @@
       gap: calc(var(--spacing) * 8);
     }
   }
-  .lg\:px-25 {
-    @media (width >= 64rem) {
-      padding-inline: calc(var(--spacing) * 25);
-    }
-  }
   .lg\:px-35 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 35);
-    }
-  }
-  .lg\:py-5 {
-    @media (width >= 64rem) {
-      padding-block: calc(var(--spacing) * 5);
     }
   }
   .lg\:py-10 {
