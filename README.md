@@ -70,6 +70,8 @@ npm install
 
 ```
 
+Remember to delete `CNAME` file from the root of the project.
+
 ## :memo: License
 
 This project is under the MIT license. For more details, see the [LICENSE](LICENSE) file.
