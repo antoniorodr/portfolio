@@ -24,33 +24,26 @@ async function loadPartial(url, containerId, callback) {
 
 // -------------------- Load navbar --------------------
 loadPartial("partials/navbar.html", "navbar-container", () => {
-    // Finn theme-controller nå som navbaren er lastet
-    const themeController = document.querySelector(".theme-controller");
-    if (!themeController) return;
+    document.addEventListener("DOMContentLoaded", () => {
+        const themeController = document.querySelector(".theme-controller");
+        if (!themeController) return;
 
-    // Sett tema basert på tidligere lagring
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        themeController.checked = savedTheme === "light";
+        const savedTheme = localStorage.getItem("theme") || "forest";
         applyTheme(savedTheme);
-    }
 
-    // Lytt på endringer
-    themeController.addEventListener("change", () => {
-        const theme = themeController.checked ? "light" : "dark";
-        applyTheme(theme);
-        localStorage.setItem("theme", theme);
-    });
+        themeController.checked = savedTheme === "forest";
 
-    function applyTheme(theme) {
-        if (theme === "light") {
-            document.documentElement.classList.add("light");
-            document.documentElement.classList.remove("dark");
-        } else {
-            document.documentElement.classList.add("dark");
-            document.documentElement.classList.remove("light");
+        themeController.addEventListener("change", () => {
+            const theme = themeController.checked ? "forest" : "corporate";
+
+            applyTheme(theme);
+            localStorage.setItem("theme", theme);
+        });
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute("data-theme", theme);
         }
-    }
+    });
 });
 
 // -------------------- Load main page content --------------------
@@ -91,15 +84,15 @@ let currentPage = 1;
 async function renderProjectsPage() {
     const container = document.getElementById("projects-container");
     if (!container) return;
-    
+
     // Preserve current height to prevent "popping"
     const currentHeight = container.offsetHeight;
     if (currentHeight > 0) {
         container.style.minHeight = `${currentHeight}px`;
-        container.style.transition = 'min-height 0.3s ease-in-out';
+        container.style.transition = "min-height 0.3s ease-in-out";
     }
-    
-    container.innerHTML = ""; // clear previous content
+
+    container.innerHTML = "";
 
     const start = (currentPage - 1) * projectsPerPage;
     const end = start + projectsPerPage;
@@ -114,10 +107,10 @@ async function renderProjectsPage() {
 
     // Remove min-height after content is loaded to allow natural sizing
     setTimeout(() => {
-        container.style.minHeight = '';
+        container.style.minHeight = "";
         // Remove transition after the height change to avoid conflicts with other animations
         setTimeout(() => {
-            container.style.transition = '';
+            container.style.transition = "";
         }, 300);
     }, 50);
 
