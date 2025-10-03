@@ -59,8 +59,10 @@ Before starting, you need to have [Git](https://git-scm.com) and [Node.js](https
 ## :checkered_flag: Starting
 
 ```bash
-# Clone this project
-git clone https://github.com/antoniorodr/portfolio
+# Fork this project
+
+# Clone the forked  project
+git clone https://github.com/<YOUR_USERNAME>/portfolio
 
 # Access
 cd portfolio
