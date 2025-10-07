@@ -22,6 +22,16 @@ async function loadPartial(url, containerId, callback) {
     }
 }
 
+// -------------------- Courses Modal Function --------------------
+function openCoursesModal() {
+    const modal = document.getElementById("courses-modal");
+    if (modal) {
+        modal.showModal();
+    } else {
+        console.error("Courses modal not found in DOM");
+    }
+}
+
 // -------------------- Load navbar --------------------
 loadPartial("partials/navbar.html", "navbar-container", () => {
     document.addEventListener("DOMContentLoaded", () => {
@@ -49,7 +59,9 @@ loadPartial("partials/navbar.html", "navbar-container", () => {
 // -------------------- Load main page content --------------------
 loadPartial("partials/footer.html", "footer-container");
 loadPartial("partials/presentation.html", "presentation-container");
-loadPartial("partials/experience.html", "experience-container");
+loadPartial("partials/experience.html", "experience-container", () => {
+    loadPartial("partials/courses/courses_modal.html", "courses-container");
+});
 
 // -------------------- Projects Pagination --------------------
 const projects = [
