@@ -69,6 +69,10 @@ const projects = [
         url: "partials/projects/stressio.html",
         containerId: "stressio-container",
     },
+    {
+        url: "partials/projects/cronboard.html",
+        containerId: "cronboard-container",
+    },
     { url: "partials/projects/lexy.html", containerId: "lexy-container" },
     { url: "partials/projects/memo.html", containerId: "memo-container" },
     { url: "partials/projects/tictactoe.html", containerId: "tic-container" },
