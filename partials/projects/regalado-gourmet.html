@@ -1,0 +1,65 @@
+<!-- Card -->
+<div class="card bg-base-200 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-101">
+  <figure class="px-4 pt-4">
+    <img src="static/pictures/portfolio/regalado.png"
+         alt="González-Regalado Gourmet"
+         class="rounded-xl w-full h-48 object-cover" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title text-xl font-bold text-base-content">
+      González-Regalado Gourmet
+      <div class="badge badge-primary">Web</div>
+    </h2>
+    <p class="text-base text-base-content">
+      A premium B2B platform showcasing carefully curated Spanish gourmet products for travel retail and international distribution.
+    </p>
+    <!-- Tech Stack Badges -->
+    <div class="flex flex-wrap gap-2 my-3">
+      <span class="badge badge-primary">Eleventy</span>
+      <span class="badge badge-secondary">Fly.io</span>
+    </div>
+    <!-- Action Buttons -->
+    <div class="card-actions justify-end mt-4 gap-2">
+      <a href="https://regaladogourmet.com"
+         target="_blank"
+         class="btn btn-primary btn-sm">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             class="h-4 w-4"
+             fill="none"
+             viewBox="0 0 24 24"
+             stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+        Website
+      </a>
+      <button onclick="document.getElementById('regalado-modal').showModal()"
+              class="btn btn-secondary btn-sm">Read more</button>
+    </div>
+  </div>
+</div>
+<!-- Modal (DaisyUI syntax, requires <dialog> support) -->
+<dialog id="regalado-modal" class="modal">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-lg">González-Regalado Gourmet</h3>
+    <p class="py-4">
+      A premium B2B platform showcasing carefully curated Spanish gourmet products for travel retail and international distribution.
+      <br />
+      <br />
+      <strong>My role:</strong> Solo developer responsible for the full stack of the platform. Built using Eleventy.
+      <br />
+      <br />
+      <strong>Key achievements and learnings:</strong>
+    <ul class="list-disc pl-5">
+      <li>Planned and structured a premium B2B corporate website, focusing on Travel Retail and international distribution.</li>
+      <li>Designed a clean, minimalistic, and elegant visual identity aligned with luxury gourmet branding.</li>
+      <li>Developed responsive layouts and clear information hierarchy for Home, About, Product Categories, Travel Retail Focus, and Contact sections.</li>
+      <li>Ensured professional positioning of Spanish D.O.P. products, emphasizing compliance, export standards, and airport-friendly packaging.</li>
+      <li>Gained experience in translating brand positioning into modern web design, balancing sophistication with usability and international appeal.</li>
+    </ul>
+    </p>
+    <div class="modal-action">
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
+
