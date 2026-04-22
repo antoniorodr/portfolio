@@ -79,6 +79,7 @@ const projects = [
   },
   { url: "partials/projects/lexy.html", containerId: "lexy-container" },
   { url: "partials/projects/memo.html", containerId: "memo-container" },
+  { url: "partials/projects/lexy.nvim.html", containerId: "lexynvim-container" },
   { url: "partials/projects/tictactoe.html", containerId: "tic-container" },
   { url: "partials/projects/spotify.html", containerId: "spotify-container" },
   { url: "partials/projects/cafe.html", containerId: "cafe-container" },
