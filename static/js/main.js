@@ -97,7 +97,7 @@ const projects = [
   },
 ];
 
-const projectsPerPage = 3;
+const projectsPerPage = 6;
 let currentPage = 1;
 
 // Render one page of projects
