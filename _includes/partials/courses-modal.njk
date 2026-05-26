@@ -1,0 +1,24 @@
+<div class="modal-overlay" id="coursesModal" onclick="closeCoursesModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <h3 class="modal-title">Completed Courses</h3>
+      <button class="modal-close" onclick="closeCoursesModal()" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <ul class="courses-list">
+        {% for course in courses %}
+        <li>
+          <a href="{{ course.url }}" target="_blank" rel="noopener" class="course-link">
+            {{ course.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
