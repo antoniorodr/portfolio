@@ -1,10 +1,12 @@
 {
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "Antonio Rodriguez - Developer Portfolio",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "devDependencies": {
-    "@catppuccin/daisyui": "^2.1.1",
-    "daisyui": "^5.1.25"
+    "@11ty/eleventy": "^3.0.0"
   }
 }
