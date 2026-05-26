@@ -138,3 +138,10 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
+# Eleventy
+_site/
+
+# OS
+.DS_Store
+Thumbs.db
