@@ -11,7 +11,7 @@ Live site: [antoniorodriguez.no](https://antoniorodriguez.no)
 
 ## 🎬 Demo
 
-![Project demo](./portfolio.jpeg)
+![Project demo](./portfolio.png)
 
 ## ✨ Features
 
