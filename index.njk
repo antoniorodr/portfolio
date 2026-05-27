@@ -1,7 +1,15 @@
 ---
 layout: layouts/base.njk
+pagination:
+data: locales
+size: 1
+alias: locale
+permalink: "/{{ locale }}/"
+eleventyComputed:
 title: "Home"
 ---
+
+{% set t = locale %}
 
 {% include "partials/hero.njk" %}
 {% include "partials/resume.njk" %}
