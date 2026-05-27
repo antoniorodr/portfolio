@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "resume": "Resume",
+    "downloadCv": "Download CV",
+    "cvEnglish": "English CV",
+    "cvNorwegian": "Norwegian CV",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, world! I'm",
+    "viewProjects": "View my projects",
+    "getInTouch": "Get in touch"
+  },
+  "resume": {
+    "title": "Resume",
+    "subtitle": "Backend Developer with experience in finance and healthcare",
+    "contact": "Contact",
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "experience": "Experience",
+    "education": "Education",
+    "viewCourses": "View completed courses"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of things I've built and contributed to",
+    "readMore": "Read more",
+    "github": "GitHub",
+    "website": "Website",
+    "liveDemo": "Live Demo",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "modal": {
+    "completedCourses": "Completed Courses",
+    "myRole": "My role",
+    "technologies": "Technologies",
+    "keyAchievements": "Key achievements & learnings",
+    "links": "Links"
+  }
+}

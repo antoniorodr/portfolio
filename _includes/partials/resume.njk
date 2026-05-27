@@ -1,23 +1,28 @@
 <section id="resume">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Resume</h2>
-      <p class="section-subtitle">Backend Developer with experience in finance and healthcare</p>
+      <h2 class="section-title">{{ "resume.title" | t(locale) }}</h2>
+      <p class="section-subtitle">{{ "resume.subtitle" | t(locale) }}</p>
     </div>
 
-    <div style="margin-bottom: 48px; padding: 24px; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: var(--radius-lg);">
-      <h3 class="text-mono" style="font-size: 1.1rem; color: var(--accent); margin-bottom: 16px;">Contact</h3>
+    <div
+      style="margin-bottom: 48px; padding: 24px; background: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: var(--radius-lg);">
+      <h3 class="text-mono" style="font-size: 1.1rem; color: var(--accent); margin-bottom: 16px;">{{ "resume.contact" |
+        t(locale) }}</h3>
       <div style="display: flex; flex-wrap: wrap; gap: 24px;">
         <div>
-          <span class="text-mono" style="color: var(--text-tertiary); font-size: 0.85rem;">Location</span>
+          <span class="text-mono" style="color: var(--text-tertiary); font-size: 0.85rem;">{{ "resume.location" |
+            t(locale) }}</span>
           <p>{{ site.location }}</p>
         </div>
         <div>
-          <span class="text-mono" style="color: var(--text-tertiary); font-size: 0.85rem;">Phone</span>
+          <span class="text-mono" style="color: var(--text-tertiary); font-size: 0.85rem;">{{ "resume.phone" | t(locale)
+            }}</span>
           <p><a href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
         </div>
         <div>
-          <span class="text-mono" style="color: var(--text-tertiary); font-size: 0.85rem;">Email</span>
+          <span class="text-mono" style="color: var(--text-tertiary); font-size: 0.85rem;">{{ "resume.email" | t(locale)
+            }}</span>
           <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </div>
       </div>
@@ -25,9 +30,10 @@
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px;">
       <div>
-        <h3 class="text-mono" style="font-size: 1.1rem; color: var(--accent); margin-bottom: 24px;">Experience</h3>
+        <h3 class="text-mono" style="font-size: 1.1rem; color: var(--accent); margin-bottom: 24px;">{{
+          "resume.experience" | t(locale) }}</h3>
         <div class="timeline">
-          {% for job in experience.experience %}
+          {% for job in experience[locale].experience %}
           <div class="timeline-item">
             <p class="timeline-period">{{ job.period }}</p>
             <h4 class="timeline-title">{{ job.title }}</h4>
@@ -39,9 +45,10 @@
       </div>
 
       <div>
-        <h3 class="text-mono" style="font-size: 1.1rem; color: var(--accent); margin-bottom: 24px;">Education</h3>
+        <h3 class="text-mono" style="font-size: 1.1rem; color: var(--accent); margin-bottom: 24px;">{{
+          "resume.education" | t(locale) }}</h3>
         <div class="timeline">
-          {% for edu in experience.education %}
+          {% for edu in experience[locale].education %}
           <div class="timeline-item">
             <p class="timeline-period">{{ edu.period }}</p>
             <h4 class="timeline-title">{{ edu.title }}</h4>
@@ -49,7 +56,7 @@
             <p class="timeline-description">{{ edu.description }}</p>
             {% if loop.first %}
             <button class="btn btn-secondary view-courses-btn" onclick="openCoursesModal()">
-              View completed courses ({{ courses | length }})
+              {{ "resume.viewCourses" | t(locale) }} ({{ courses | length }})
             </button>
             {% endif %}
           </div>

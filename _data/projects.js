@@ -1,275 +1,552 @@
-module.exports = [
-  {
-    name: "Regalado Gourmet",
-    type: "Website",
-    description: "A premium B2B platform showcasing carefully curated Spanish gourmet products for travel retail and international distribution.",
-    modalDescription: "A premium B2B platform showcasing carefully curated Spanish gourmet products for travel retail and international distribution.",
-    tech: ["Eleventy", "Fly.io"],
-    image: "/static/pictures/portfolio/regalado.png",
-    links: {
-      website: "https://regaladogourmet.com",
+module.exports = {
+  en: [
+    {
+      name: "Regalado Gourmet",
+      type: "Website",
+      description: "A premium B2B platform showcasing carefully curated Spanish gourmet products for travel retail and international distribution.",
+      modalDescription: "A premium B2B platform showcasing carefully curated Spanish gourmet products for travel retail and international distribution.",
+      tech: ["Eleventy", "Fly.io"],
+      image: "/static/pictures/portfolio/regalado.png",
+      links: {
+        website: "https://regaladogourmet.com",
+      },
+      details: {
+        role: "Solo developer responsible for the full stack of the platform. Built using Eleventy.",
+        achievements: [
+          "Planned and structured a premium B2B corporate website, focusing on Travel Retail and international distribution.",
+          "Designed a clean, minimalistic, and elegant visual identity aligned with luxury gourmet branding.",
+          "Developed responsive layouts and clear information hierarchy for Home, About, Product Categories, Travel Retail Focus, and Contact sections.",
+          "Ensured professional positioning of Spanish D.O.P. products, emphasizing compliance, export standards, and airport-friendly packaging.",
+          "Gained experience in translating brand positioning into modern web design, balancing sophistication with usability and international appeal.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the full stack of the platform. Built using Eleventy.",
-      achievements: [
-        "Planned and structured a premium B2B corporate website, focusing on Travel Retail and international distribution.",
-        "Designed a clean, minimalistic, and elegant visual identity aligned with luxury gourmet branding.",
-        "Developed responsive layouts and clear information hierarchy for Home, About, Product Categories, Travel Retail Focus, and Contact sections.",
-        "Ensured professional positioning of Spanish D.O.P. products, emphasizing compliance, export standards, and airport-friendly packaging.",
-        "Gained experience in translating brand positioning into modern web design, balancing sophistication with usability and international appeal.",
-      ],
+    {
+      name: "Stressio",
+      type: "Web Application",
+      description: "A platform for anonymous stress tracking and providing valuable insights in workplace environments.",
+      modalDescription: "A digital platform for measuring and understanding stress levels in the workplace. Employees can report stress anonymously while managers receive aggregated insights to make informed decisions and improve the work environment.",
+      tech: ["FastAPI", "Tailwind CSS", "Python"],
+      image: "/static/pictures/portfolio/stressio.png",
+      links: {
+        website: "https://stressio.no",
+      },
+      details: {
+        role: "Solo developer responsible for the full stack of the platform. Built the frontend using Tailwind CSS and DaisyUI, and implemented the backend with Python and FastAPI. Managed database migrations with Alembic and added internationalization support using Babel.",
+        achievements: [
+          "Developed a fully functional full-stack application independently, from database to frontend.",
+          "Designed interactive and responsive dashboards for real-time stress reporting.",
+          "Ensured data privacy and anonymity, fully compliant with GDPR.",
+          "Implemented database migrations and multilingual support, improving maintainability and accessibility.",
+          "Gained extensive experience in project planning, full-stack development, and delivering a polished, production-ready solution.",
+        ],
+      },
     },
-  },
-  {
-    name: "Stressio",
-    type: "Web Application",
-    description: "A platform for anonymous stress tracking and providing valuable insights in workplace environments.",
-    modalDescription: "A digital platform for measuring and understanding stress levels in the workplace. Employees can report stress anonymously while managers receive aggregated insights to make informed decisions and improve the work environment.",
-    tech: ["FastAPI", "Tailwind CSS", "Python"],
-    image: "/static/pictures/portfolio/stressio.png",
-    links: {
-      website: "https://stressio.no",
+    {
+      name: "Cronboard",
+      type: "CLI Tool",
+      description: "A terminal application that allows you to manage and schedule cronjobs on local and remote servers.",
+      modalDescription: "Cronboard is a terminal application that allows you to manage and schedule cronjobs on local and remote servers. With Cronboard, you can easily add, edit, and delete cronjobs, as well as view their status. Cronboard was featured as Tool of the Week on <a href=\"https://terminaltrove.com/cronboard\" target=\"_blank\">Terminal Trove</a>.",
+      tech: ["CLI", "Python", "Homebrew"],
+      image: "/static/pictures/portfolio/cronboard.png",
+      links: {
+        github: "https://github.com/antoniorodr/cronboard",
+      },
+      highlight: "Terminal Trove Tool of the Week",
+      details: {
+        role: "Solo developer responsible for the entire project. Developed the application using Python with libraries such as Textual, Paramiko, Python-crontab, and Cron-descriptor. Focused on creating a seamless terminal-based experience for developers.",
+        achievements: [
+          "Developed Cronboard, a terminal-based dashboard for managing cron jobs efficiently.",
+          "Implemented human-readable cron expressions and validation for better user experience.",
+          "Enabled pausing, resuming, editing, and deleting of cron jobs directly from the terminal.",
+          "Integrated SSH connectivity for managing cron jobs on remote servers.",
+          "Gained experience in building developer-focused terminal tools and workflow enhancements.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the full stack of the platform. Built the frontend using Tailwind CSS and DaisyUI, and implemented the backend with Python and FastAPI. Managed database migrations with Alembic and added internationalization support using Babel.",
-      achievements: [
-        "Developed a fully functional full-stack application independently, from database to frontend.",
-        "Designed interactive and responsive dashboards for real-time stress reporting.",
-        "Ensured data privacy and anonymity, fully compliant with GDPR.",
-        "Implemented database migrations and multilingual support, improving maintainability and accessibility.",
-        "Gained extensive experience in project planning, full-stack development, and delivering a polished, production-ready solution.",
-      ],
+    {
+      name: "Lexy",
+      type: "CLI Tool",
+      description: "A lightweight CLI tool that fetches programming tutorials from \"Learn X in Y Minutes\" directly to your terminal.",
+      modalDescription: "A lightweight command-line interface (CLI) tool that fetches programming tutorials from \"Learn X in Y Minutes\" directly into your terminal. Quickly search, learn, and reference code examples without leaving your workflow.",
+      tech: ["CLI", "Python", "Homebrew"],
+      image: "/static/pictures/portfolio/lexy.png",
+      links: {
+        github: "https://github.com/antoniorodr/lexy",
+      },
+      details: {
+        role: "Solo developer responsible for the entire project. Developed the application using Python with libraries such as Click, Typer, BeautifulSoup, fzf, and bat. Focused on creating a seamless terminal-based experience for developers.",
+        achievements: [
+          "Designed a terminal-based tool that integrates with \"Learn X in Y Minutes\" resources.",
+          "Implemented syntax highlighting using bat for enhanced readability.",
+          "Enabled offline access by saving a local copy of the documentation.",
+          "Incorporated fuzzy search capabilities with fzf for efficient navigation.",
+          "Gained experience in developing developer tools and enhancing terminal workflows.",
+        ],
+      },
     },
-  },
-  {
-    name: "Cronboard",
-    type: "CLI Tool",
-    description: "A terminal application that allows you to manage and schedule cronjobs on local and remote servers.",
-    modalDescription: "Cronboard is a terminal application that allows you to manage and schedule cronjobs on local and remote servers. With Cronboard, you can easily add, edit, and delete cronjobs, as well as view their status. Cronboard was featured as Tool of the Week on <a href=\"https://terminaltrove.com/cronboard\" target=\"_blank\">Terminal Trove</a>.",
-    tech: ["CLI", "Python", "Homebrew"],
-    image: "/static/pictures/portfolio/cronboard.png",
-    links: {
-      github: "https://github.com/antoniorodr/cronboard",
+    {
+      name: "Memo",
+      type: "CLI Tool",
+      description: "A powerful CLI tool for managing Apple Notes and Reminders directly from your terminal interface.",
+      modalDescription: "Memo is a command-line interface (CLI) tool written in Python for managing Apple Notes and Apple Reminders. The goal is to provide a fast, keyboard-driven way to create, search, and organize notes and reminders directly from the terminal.",
+      tech: ["CLI", "Python", "Homebrew"],
+      image: "/static/pictures/portfolio/memo.png",
+      links: {
+        github: "https://github.com/antoniorodr/memo",
+      },
+      details: {
+        role: "Solo developer. Built the entire application using Python with libraries like Click and Typer for the command-line interface, and integrated with Apple Notes and Reminders via AppleScript.",
+        achievements: [
+          "Developed an efficient CLI tool for managing Apple Notes and Reminders.",
+          "Implemented features to create, search, and organize notes and reminders.",
+          "Integrated with AppleScript to communicate with macOS applications.",
+          "Focused on creating a fast and user-friendly terminal interface.",
+          "Gained experience in developing productivity tools for developers.",
+        ],
+      },
     },
-    highlight: "Terminal Trove Tool of the Week",
-    details: {
-      role: "Solo developer responsible for the entire project. Developed the application using Python with libraries such as Textual, Paramiko, Python-crontab, and Cron-descriptor. Focused on creating a seamless terminal-based experience for developers.",
-      achievements: [
-        "Developed Cronboard, a terminal-based dashboard for managing cron jobs efficiently.",
-        "Implemented human-readable cron expressions and validation for better user experience.",
-        "Enabled pausing, resuming, editing, and deleting of cron jobs directly from the terminal.",
-        "Integrated SSH connectivity for managing cron jobs on remote servers.",
-        "Gained experience in building developer-focused terminal tools and workflow enhancements.",
-      ],
+    {
+      name: "Lexy.nvim",
+      type: "Neovim Plugin",
+      description: "Check documentation from the website \"Learn X in Y minutes\" right from Neovim. This plugin integrates my project Lexy into Neovim.",
+      modalDescription: "Neovim plugin for Lexy. Check documentation from the website \"Learn X in Y minutes\" right from Neovim!",
+      tech: ["Plugin", "Lua", "Neovim"],
+      image: "/static/pictures/portfolio/lexy.nvim.png",
+      links: {
+        github: "https://github.com/antoniorodr/lexy.nvim",
+      },
+      details: {
+        role: "Solo developer responsible for the entire project. Developed the plugin using Lua.",
+        achievements: [
+          "Designed a Neovim plugin that integrates with Lexy.",
+          "Implemented integration with Neovim pickers like snacks and telescope.",
+          "Gained experience in developing Neovim plugins and enhancing terminal workflows.",
+        ],
+      },
     },
-  },
-  {
-    name: "Lexy",
-    type: "CLI Tool",
-    description: "A lightweight CLI tool that fetches programming tutorials from \"Learn X in Y Minutes\" directly to your terminal.",
-    modalDescription: "A lightweight command-line interface (CLI) tool that fetches programming tutorials from \"Learn X in Y Minutes\" directly into your terminal. Quickly search, learn, and reference code examples without leaving your workflow.",
-    tech: ["CLI", "Python", "Homebrew"],
-    image: "/static/pictures/portfolio/lexy.png",
-    links: {
-      github: "https://github.com/antoniorodr/lexy",
+    {
+      name: "Tic-Tac-Toe",
+      type: "Game",
+      description: "A classic text-based Tic Tac Toe game implementation with clean Python code and terminal interface.",
+      modalDescription: "A command-line implementation of the classic Tic Tac Toe game. Designed as a lightweight Python script where players can compete directly in the terminal.",
+      tech: ["CLI", "Python"],
+      image: "/static/pictures/portfolio/tictactoe.png",
+      links: {
+        github: "https://github.com/antoniorodr/tic_tac_toe",
+      },
+      details: {
+        role: "Solo developer responsible for designing and implementing the game loop, input handling, and win/draw logic using Python.",
+        achievements: [
+          "Implemented full game mechanics including win conditions, turn switching, and draw detection.",
+          "Practiced writing clean and modular Python code for game logic.",
+          "Strengthened understanding of control flow, loops, and input validation in Python.",
+          "Improved ability to design and test small-scale interactive applications in a CLI environment.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the entire project. Developed the application using Python with libraries such as Click, Typer, BeautifulSoup, fzf, and bat. Focused on creating a seamless terminal-based experience for developers.",
-      achievements: [
-        "Designed a terminal-based tool that integrates with \"Learn X in Y Minutes\" resources.",
-        "Implemented syntax highlighting using bat for enhanced readability.",
-        "Enabled offline access by saving a local copy of the documentation.",
-        "Incorporated fuzzy search capabilities with fzf for efficient navigation.",
-        "Gained experience in developing developer tools and enhancing terminal workflows.",
-      ],
+    {
+      name: "Spotify Downloader",
+      type: "Script",
+      description: "A tool that allows you to download songs from Spotify by leveraging Billboard Top 100 charts and the Spotify API.",
+      modalDescription: "A Python script that lets users create a Spotify playlist containing the top 100 songs from a specific date. It prompts the user for a date, fetches the Billboard top 100 from that day, and then creates a playlist on Spotify containing those songs (skipping any that are unavailable).",
+      tech: ["Python", "Spotify API"],
+      image: "/static/pictures/portfolio/spotify.jpg",
+      links: {
+        github: "https://github.com/antoniorodr/Spotify_playlist_creation",
+      },
+      details: {
+        role: "Solo developer responsible for the entire project. Wrote the logic in Python, integrated with Spotify's Web API, handled HTTP requests and authentication, and managed error cases where songs aren't found on Spotify.",
+        achievements: [
+          "Built a script that interacts with external APIs (Spotify, Billboard) to fetch and transform data.",
+          "Handled OAuth authentication and token management for Spotify API.",
+          "Dealt with missing tracks gracefully by skipping them and notifying the user.",
+          "Improved error handling, logging, and input validation to make the tool robust.",
+          "Gained hands-on experience in integrating multiple services and working with RESTful APIs in Python.",
+        ],
+      },
     },
-  },
-  {
-    name: "Memo",
-    type: "CLI Tool",
-    description: "A powerful CLI tool for managing Apple Notes and Reminders directly from your terminal interface.",
-    modalDescription: "Memo is a command-line interface (CLI) tool written in Python for managing Apple Notes and Apple Reminders. The goal is to provide a fast, keyboard-driven way to create, search, and organize notes and reminders directly from the terminal.",
-    tech: ["CLI", "Python", "Homebrew"],
-    image: "/static/pictures/portfolio/memo.png",
-    links: {
-      github: "https://github.com/antoniorodr/memo",
+    {
+      name: "Cafe and Wifi API",
+      type: "REST API",
+      description: "A comprehensive REST API for discovering cafes with reliable WiFi connections and amenities.",
+      modalDescription: "A web application designed to help users find cafes that offer reliable Wi-Fi, power outlets, and quality coffee. The platform allows users to search for cafes by location and view detailed information about each cafe's amenities.",
+      tech: ["REST API", "Python", "Flask"],
+      links: {
+        github: "https://github.com/antoniorodr/cafe_and_wifi",
+        demo: "https://cafe-and-wifi.vercel.app",
+      },
+      details: {
+        role: "Full-stack developer responsible for both frontend and backend development. Built the backend using Python and Flask to handle API requests and manage cafe data. Developed the frontend using HTML, CSS, and JavaScript to create an intuitive user interface. Deployed the application on Vercel for easy access and scalability.",
+        achievements: [
+          "Developed a RESTful API to manage and retrieve cafe information.",
+          "Created a responsive and user-friendly frontend to display cafe details.",
+          "Implemented search functionality to allow users to find cafes based on location.",
+          "Deployed the application on Vercel, ensuring fast and reliable access.",
+          "Gained experience in full-stack development, API design, and deployment processes.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer. Built the entire application using Python with libraries like Click and Typer for the command-line interface, and integrated with Apple Notes and Reminders via AppleScript.",
-      achievements: [
-        "Developed an efficient CLI tool for managing Apple Notes and Reminders.",
-        "Implemented features to create, search, and organize notes and reminders.",
-        "Integrated with AppleScript to communicate with macOS applications.",
-        "Focused on creating a fast and user-friendly terminal interface.",
-        "Gained experience in developing productivity tools for developers.",
-      ],
+    {
+      name: "Color Extractor",
+      type: "Web Application",
+      description: "Flask web application that accepts an uploaded image and provides top 10 colors, hex codes and percentages.",
+      modalDescription: "A web application that extracts color palettes from any image, providing users with the dominant colors in HEX format. The platform allows users to upload images and instantly see the main colors.",
+      tech: ["Flask", "Image Processing", "Python"],
+      image: "/static/pictures/portfolio/colorextractor.png",
+      links: {
+        github: "https://github.com/antoniorodr/color_extractor",
+        demo: "https://color-extractor-eta.vercel.app",
+      },
+      details: {
+        role: "Solo developer responsible for the entire project. Built the frontend using Bootstrap and implemented the backend with Python and Flask to handle image uploads and color extraction logic. Deployed the project on Vercel for fast and easy access.",
+        achievements: [
+          "Developed a full-stack application independently, from frontend to backend.",
+          "Implemented image upload functionality with real-time color palette extraction.",
+          "Designed a lightweight, responsive, and user-friendly interface.",
+          "Deployed the application to Vercel, gaining experience with cloud deployment.",
+          "Enhanced problem-solving skills by integrating image processing and color analysis features.",
+        ],
+      },
     },
-  },
-  {
-    name: "Lexy.nvim",
-    type: "Neovim Plugin",
-    description: "Check documentation from the website \"Learn X in Y minutes\" right from Neovim. This plugin integrates my project Lexy into Neovim.",
-    modalDescription: "Neovim plugin for Lexy. Check documentation from the website \"Learn X in Y minutes\" right from Neovim!",
-    tech: ["Plugin", "Lua", "Neovim"],
-    image: "/static/pictures/portfolio/lexy.nvim.png",
-    links: {
-      github: "https://github.com/antoniorodr/lexy.nvim",
+    {
+      name: "LOTR Wiki",
+      type: "Web Application",
+      description: "A simple LOTR Wiki built with Flask that retrieves information from the-one-api.dev.",
+      modalDescription: "A fan-focused wiki platform for exploring characters, locations, and lore from The Lord of the Rings universe. The platform provides searchable, structured information with rich details for enthusiasts and newcomers alike.",
+      tech: ["Flask", "API Integration", "Python"],
+      image: "/static/pictures/portfolio/lotr.png",
+      links: {
+        github: "https://github.com/antoniorodr/LOTR_Wiki",
+        demo: "https://lotr-tau.vercel.app",
+      },
+      details: {
+        role: "Solo developer responsible for the full stack of the application. Built the frontend using Bootstrap and implemented the backend with Python and Flask. Deployed the project on Vercel for fast and accessible performance.",
+        achievements: [
+          "Developed a fully functional full-stack wiki application independently, from backend to frontend.",
+          "Designed a responsive and interactive UI using Bootstrap components and best practices.",
+          "Gained experience in building and structuring a full-stack web application with Flask.",
+          "Deployed the application to Vercel, gaining experience with cloud deployment and performance optimization.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the entire project. Developed the plugin using Lua.",
-      achievements: [
-        "Designed a Neovim plugin that integrates with Lexy.",
-        "Implemented integration with Neovim pickers like snacks and telescope.",
-        "Gained experience in developing Neovim plugins and enhancing terminal workflows.",
-      ],
+    {
+      name: "EV Hotels",
+      type: "Web Application",
+      description: "A web application designed to help electric vehicle owners locate hotels that offer charging stations, using interactive map data.",
+      modalDescription: "A web application that helps electric vehicle (EV) owners find hotels equipped with EV charging stations. Users can search for hotels by location and view details about available charging facilities.",
+      tech: ["Database", "Web Scraping", "API"],
+      image: "/static/pictures/portfolio/evhotels.png",
+      links: {
+        github: "https://github.com/antoniorodr/EV-Friendly-Hotels",
+        demo: "https://evhotels.onrender.com",
+      },
+      details: {
+        role: "Solo developer responsible for the entire project. Built the frontend using Bootstrap and JavaScript, and implemented the backend with Python and Flask. Deployed the application on Render for reliable hosting.",
+        achievements: [
+          "Developed a full-stack application independently, from frontend to backend.",
+          "Implemented a search functionality to filter hotels based on location and charging facilities.",
+          "Designed a clean and user-friendly interface for an optimal user experience.",
+          "Deployed the application to Render, gaining experience with cloud deployment.",
+          "Enhanced problem-solving skills by integrating location-based search and data filtering features.",
+        ],
+      },
     },
-  },
-  {
-    name: "Tic-Tac-Toe",
-    type: "Game",
-    description: "A classic text-based Tic Tac Toe game implementation with clean Python code and terminal interface.",
-    modalDescription: "A command-line implementation of the classic Tic Tac Toe game. Designed as a lightweight Python script where players can compete directly in the terminal.",
-    tech: ["CLI", "Python"],
-    image: "/static/pictures/portfolio/tictactoe.png",
-    links: {
-      github: "https://github.com/antoniorodr/tic_tac_toe",
+    {
+      name: "Simple Flex Portfolio",
+      type: "Website",
+      description: "A responsive and minimalist portfolio website built using modern Flexbox layout techniques and design principles.",
+      modalDescription: "A responsive and minimalist portfolio website built using Flexbox layout. Designed to showcase projects and skills in a clean and accessible manner.",
+      tech: ["HTML", "CSS", "Flexbox"],
+      image: "/static/pictures/portfolio/flex.png",
+      links: {
+        github: "https://github.com/antoniorodr/flex-portfolio",
+        demo: "https://antoniorodr.github.io/flex-portfolio/",
+      },
+      details: {
+        role: "Sole developer responsible for the entire project. Utilized HTML5 and CSS3 to create a flexible layout that adapts seamlessly across devices.",
+        achievements: [
+          "Developed a fully responsive portfolio layout using Flexbox, ensuring optimal viewing experiences on various screen sizes.",
+          "Emphasized accessibility and semantic HTML to enhance user experience and SEO performance.",
+          "Implemented a minimalist design approach to focus on content and projects.",
+          "Gained hands-on experience in creating a real-world, production-ready static website.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for designing and implementing the game loop, input handling, and win/draw logic using Python.",
-      achievements: [
-        "Implemented full game mechanics including win conditions, turn switching, and draw detection.",
-        "Practiced writing clean and modular Python code for game logic.",
-        "Strengthened understanding of control flow, loops, and input validation in Python.",
-        "Improved ability to design and test small-scale interactive applications in a CLI environment.",
-      ],
+  ],
+  no: [
+    {
+      name: "Regalado Gourmet",
+      type: "Nettside",
+      description: "En premium B2B-plattform som viser nøye utvalgte spanske gourmetprodukter for travel retail og internasjonal distribusjon.",
+      modalDescription: "En premium B2B-plattform som viser nøye utvalgte spanske gourmetprodukter for travel retail og internasjonal distribusjon.",
+      tech: ["Eleventy", "Fly.io"],
+      image: "/static/pictures/portfolio/regalado.png",
+      links: {
+        website: "https://regaladogourmet.com",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele plattformen. Bygget med Eleventy.",
+        achievements: [
+          "Planla og strukturerte en premium B2B-bedriftsnettside med fokus på Travel Retail og internasjonal distribusjon.",
+          "Designet en ren, minimalistisk og elegant visuell identitet i tråd med luksus-gourmet-branding.",
+          "Utviklet responsive layouter og klar informasjonsstruktur for Hjem, Om, Produktkategorier, Travel Retail-fokus og Kontakt-seksjoner.",
+          "Sikret profesjonell posisjonering av spanske D.O.P.-produkter med vekt på samsvar, eksportstandarder og flyplassvennlig emballasje.",
+          "Fikk erfaring i å oversette brand-posisjonering til moderne webdesign, med balanse mellom sofistikering, brukervennlighet og internasjonal appell.",
+        ],
+      },
     },
-  },
-  {
-    name: "Spotify Downloader",
-    type: "Script",
-    description: "A tool that allows you to download songs from Spotify by leveraging Billboard Top 100 charts and the Spotify API.",
-    modalDescription: "A Python script that lets users create a Spotify playlist containing the top 100 songs from a specific date. It prompts the user for a date, fetches the Billboard top 100 from that day, and then creates a playlist on Spotify containing those songs (skipping any that are unavailable).",
-    tech: ["Python", "Spotify API"],
-    image: "/static/pictures/portfolio/spotify.jpg",
-    links: {
-      github: "https://github.com/antoniorodr/Spotify_playlist_creation",
+    {
+      name: "Stressio",
+      type: "Webapplikasjon",
+      description: "En plattform for anonym stresssporing og verdifulle innsikter i arbeidsmiljøer.",
+      modalDescription: "En digital plattform for måling og forståelse av stressnivåer på arbeidsplassen. Ansatte kan rapportere stress anonymt mens ledere mottar aggregerte innsikter for å ta informerte beslutninger og forbedre arbeidsmiljøet.",
+      tech: ["FastAPI", "Tailwind CSS", "Python"],
+      image: "/static/pictures/portfolio/stressio.png",
+      links: {
+        website: "https://stressio.no",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele plattformen. Bygget frontend med Tailwind CSS og DaisyUI, og implementerte backend med Python og FastAPI. Håndterte databasemigreringer med Alembic og la til flerspråklig støtte med Babel.",
+        achievements: [
+          "Utviklet en fullt funksjonell full-stack-applikasjon uavhengig, fra database til frontend.",
+          "Designet interaktive og responsive dashboards for sanntids stressrapportering.",
+          "Sikret personvern og anonymitet, fullt GDPR-samsvar.",
+          "Implementerte databasemigreringer og flerspråklig støtte, forbedret vedlikeholdbarhet og tilgjengelighet.",
+          "Fikk omfattende erfaring i prosjektplanlegging, full-stack-utvikling og levering av en polert, produksjonsklar løsning.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the entire project. Wrote the logic in Python, integrated with Spotify's Web API, handled HTTP requests and authentication, and managed error cases where songs aren't found on Spotify.",
-      achievements: [
-        "Built a script that interacts with external APIs (Spotify, Billboard) to fetch and transform data.",
-        "Handled OAuth authentication and token management for Spotify API.",
-        "Dealt with missing tracks gracefully by skipping them and notifying the user.",
-        "Improved error handling, logging, and input validation to make the tool robust.",
-        "Gained hands-on experience in integrating multiple services and working with RESTful APIs in Python.",
-      ],
+    {
+      name: "Cronboard",
+      type: "CLI-verktøy",
+      description: "En terminalapplikasjon som lar deg administrere og planlegge cronjobber på lokale og eksterne servere.",
+      modalDescription: "Cronboard er en terminalapplikasjon som lar deg administrere og planlegge cronjobber på lokale og eksterne servere. Med Cronboard kan du enkelt legge til, redigere og slette cronjobber, samt se statusen deres. Cronboard ble kåret til Ukens Verktøy på <a href=\"https://terminaltrove.com/cronboard\" target=\"_blank\">Terminal Trove</a>.",
+      tech: ["CLI", "Python", "Homebrew"],
+      image: "/static/pictures/portfolio/cronboard.png",
+      links: {
+        github: "https://github.com/antoniorodr/cronboard",
+      },
+      highlight: "Terminal Trove Ukens Verktøy",
+      details: {
+        role: "Aleneutvikler ansvarlig for hele prosjektet. Utviklet applikasjonen med Python med biblioteker som Textual, Paramiko, Python-crontab og Cron-descriptor. Fokuserte på å skape en sømløs terminalbasert opplevelse for utviklere.",
+        achievements: [
+          "Utviklet Cronboard, et terminalbasert dashbord for effektiv administrering av cron-jobber.",
+          "Implementerte menneskelesbare cron-uttrykk og validering for bedre brukeropplevelse.",
+          "Muliggjorde pausing, gjenopptak, redigering og sletting av cron-jobber direkte fra terminalen.",
+          "Integrerte SSH-tilkobling for administrering av cron-jobber på eksterne servere.",
+          "Fikk erfaring i å bygge utviklerfokuserte terminalverktøy og arbeidsflytforbedringer.",
+        ],
+      },
     },
-  },
-  {
-    name: "Cafe and Wifi API",
-    type: "REST API",
-    description: "A comprehensive REST API for discovering cafes with reliable WiFi connections and amenities.",
-    modalDescription: "A web application designed to help users find cafes that offer reliable Wi-Fi, power outlets, and quality coffee. The platform allows users to search for cafes by location and view detailed information about each cafe's amenities.",
-    tech: ["REST API", "Python", "Flask"],
-    links: {
-      github: "https://github.com/antoniorodr/cafe_and_wifi",
-      demo: "https://cafe-and-wifi.vercel.app",
+    {
+      name: "Lexy",
+      type: "CLI-verktøy",
+      description: "Et lett CLI-verktøy som henter programmeringsveiledninger fra \"Learn X in Y Minutes\" direkte til terminalen din.",
+      modalDescription: "Et lett kommandolinjeverktøy (CLI) som henter programmeringsveiledninger fra \"Learn X in Y Minutes\" direkte inn i terminalen din. Søk, lær og referer kodeeksempler raskt uten å forlate arbeidsflyten din.",
+      tech: ["CLI", "Python", "Homebrew"],
+      image: "/static/pictures/portfolio/lexy.png",
+      links: {
+        github: "https://github.com/antoniorodr/lexy",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele prosjektet. Utviklet applikasjonen med Python med biblioteker som Click, Typer, BeautifulSoup, fzf og bat. Fokuserte på å skape en sømløs terminalbasert opplevelse for utviklere.",
+        achievements: [
+          "Designet et terminalbasert verktøy som integreres med \"Learn X in Y Minutes\"-ressurser.",
+          "Implementerte syntaksutheving med bat for forbedret lesbarhet.",
+          "Muliggjorde offline-tilgang ved å lagre en lokal kopi av dokumentasjonen.",
+          "Inkorporerte fuzzy-søkefunksjoner med fzf for effektiv navigering.",
+          "Fikk erfaring i å utvikle utviklerverktøy og forbedre terminalarbeidsflyter.",
+        ],
+      },
     },
-    details: {
-      role: "Full-stack developer responsible for both frontend and backend development. Built the backend using Python and Flask to handle API requests and manage cafe data. Developed the frontend using HTML, CSS, and JavaScript to create an intuitive user interface. Deployed the application on Vercel for easy access and scalability.",
-      achievements: [
-        "Developed a RESTful API to manage and retrieve cafe information.",
-        "Created a responsive and user-friendly frontend to display cafe details.",
-        "Implemented search functionality to allow users to find cafes based on location.",
-        "Deployed the application on Vercel, ensuring fast and reliable access.",
-        "Gained experience in full-stack development, API design, and deployment processes.",
-      ],
+    {
+      name: "Memo",
+      type: "CLI-verktøy",
+      description: "Et kraftig CLI-verktøy for å administrere Apple Notater og Påminnelser direkte fra terminalgrensesnittet.",
+      modalDescription: "Memo er et kommandolinjeverktøy (CLI) skrevet i Python for å administrere Apple Notater og Apple Påminnelser. Målet er å gi en rask, tastaturdrevet måte å opprette, søke og organisere notater og påminnelser direkte fra terminalen.",
+      tech: ["CLI", "Python", "Homebrew"],
+      image: "/static/pictures/portfolio/memo.png",
+      links: {
+        github: "https://github.com/antoniorodr/memo",
+      },
+      details: {
+        role: "Aleneutvikler. Bygget hele applikasjonen med Python med biblioteker som Click og Typer for kommandolinjegrensesnittet, og integrerte med Apple Notater og Påminnelser via AppleScript.",
+        achievements: [
+          "Utviklet et effektivt CLI-verktøy for å administrere Apple Notater og Påminnelser.",
+          "Implementerte funksjoner for å opprette, søke og organisere notater og påminnelser.",
+          "Integrerte med AppleScript for å kommunisere med macOS-applikasjoner.",
+          "Fokuserte på å skape et raskt og brukervennlig terminalgrensesnitt.",
+          "Fikk erfaring i å utvikle produktivitetsverktøy for utviklere.",
+        ],
+      },
     },
-  },
-  {
-    name: "Color Extractor",
-    type: "Web Application",
-    description: "Flask web application that accepts an uploaded image and provides top 10 colors, hex codes and percentages.",
-    modalDescription: "A web application that extracts color palettes from any image, providing users with the dominant colors in HEX format. The platform allows users to upload images and instantly see the main colors.",
-    tech: ["Flask", "Image Processing", "Python"],
-    image: "/static/pictures/portfolio/colorextractor.png",
-    links: {
-      github: "https://github.com/antoniorodr/color_extractor",
-      demo: "https://color-extractor-eta.vercel.app",
+    {
+      name: "Lexy.nvim",
+      type: "Neovim-plugin",
+      description: "Sjekk dokumentasjon fra nettsiden \"Learn X in Y minutes\" rett fra Neovim. Denne pluginen integrerer prosjektet mitt Lexy inn i Neovim.",
+      modalDescription: "Neovim-plugin for Lexy. Sjekk dokumentasjon fra nettsiden \"Learn X in Y minutes\" rett fra Neovim!",
+      tech: ["Plugin", "Lua", "Neovim"],
+      image: "/static/pictures/portfolio/lexy.nvim.png",
+      links: {
+        github: "https://github.com/antoniorodr/lexy.nvim",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele prosjektet. Utviklet pluginen med Lua.",
+        achievements: [
+          "Designet en Neovim-plugin som integreres med Lexy.",
+          "Implementerte integrasjon med Neovim-velgere som snacks og telescope.",
+          "Fikk erfaring i å utvikle Neovim-plugins og forbedre terminalarbeidsflyter.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the entire project. Built the frontend using Bootstrap and implemented the backend with Python and Flask to handle image uploads and color extraction logic. Deployed the project on Vercel for fast and easy access.",
-      achievements: [
-        "Developed a full-stack application independently, from frontend to backend.",
-        "Implemented image upload functionality with real-time color palette extraction.",
-        "Designed a lightweight, responsive, and user-friendly interface.",
-        "Deployed the application to Vercel, gaining experience with cloud deployment.",
-        "Enhanced problem-solving skills by integrating image processing and color analysis features.",
-      ],
+    {
+      name: "Tic-Tac-Toe",
+      type: "Spill",
+      description: "En klassisk tekstbasert Tic Tac Toe-spillimplementering med ren Python-kode og terminalgrensesnitt.",
+      modalDescription: "En kommandolinjeimplementering av det klassiske Tic Tac Toe-spillet. Designet som et lett Python-skript der spillere kan konkurrere direkte i terminalen.",
+      tech: ["CLI", "Python"],
+      image: "/static/pictures/portfolio/tictactoe.png",
+      links: {
+        github: "https://github.com/antoniorodr/tic_tac_toe",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for å designe og implementere spill-løkken, inndatabehandling og vinn/tau-logikk med Python.",
+        achievements: [
+          "Implementerte full spillopplevelse inkludert vinnbetingelser, turbytte og tau-deteksjon.",
+          "Øvet på å skrive ren og modulær Python-kode for spilllogikk.",
+          "Styrket forståelsen av kontrollflyt, løkker og input-validering i Python.",
+          "Forbedret evnen til å designe og teste småskala interaktive applikasjoner i et CLI-miljø.",
+        ],
+      },
     },
-  },
-  {
-    name: "LOTR Wiki",
-    type: "Web Application",
-    description: "A simple LOTR Wiki built with Flask that retrieves information from the-one-api.dev.",
-    modalDescription: "A fan-focused wiki platform for exploring characters, locations, and lore from The Lord of the Rings universe. The platform provides searchable, structured information with rich details for enthusiasts and newcomers alike.",
-    tech: ["Flask", "API Integration", "Python"],
-    image: "/static/pictures/portfolio/lotr.png",
-    links: {
-      github: "https://github.com/antoniorodr/LOTR_Wiki",
-      demo: "https://lotr-tau.vercel.app",
+    {
+      name: "Spotify Downloader",
+      type: "Skript",
+      description: "Et verktøy som lar deg laste ned sanger fra Spotify ved å utnytte Billboard Top 100-lister og Spotify API.",
+      modalDescription: "Et Python-skript som lar brukere lage en Spotify-spilleliste som inneholder de 100 beste sangene fra en bestemt dato. Det ber brukeren om en dato, henter Billboard topp 100 fra den dagen, og lager deretter en spilleliste på Spotify som inneholder disse sangene (hopper over utilgjengelige).",
+      tech: ["Python", "Spotify API"],
+      image: "/static/pictures/portfolio/spotify.jpg",
+      links: {
+        github: "https://github.com/antoniorodr/Spotify_playlist_creation",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele prosjektet. Skrev logikken i Python, integrerte med Spotifys Web API, håndterte HTTP-forespørsler og autentisering, og håndterte feiltilfeller der sanger ikke finnes på Spotify.",
+        achievements: [
+          "Bygde et skript som samhandler med eksterne API-er (Spotify, Billboard) for å hente og transformere data.",
+          "Håndterte OAuth-autentisering og token-administrering for Spotify API.",
+          "Håndterte manglende spor elegant ved å hoppe over dem og varsle brukeren.",
+          "Forbedret feilhåndtering, logging og input-validering for å gjøre verktøyet robust.",
+          "Fikk praktisk erfaring i å integrere flere tjenester og jobbe med RESTful API-er i Python.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the full stack of the application. Built the frontend using Bootstrap and implemented the backend with Python and Flask. Deployed the project on Vercel for fast and accessible performance.",
-      achievements: [
-        "Developed a fully functional full-stack wiki application independently, from backend to frontend.",
-        "Designed a responsive and interactive UI using Bootstrap components and best practices.",
-        "Gained experience in building and structuring a full-stack web application with Flask.",
-        "Deployed the application to Vercel, gaining experience with cloud deployment and performance optimization.",
-      ],
+    {
+      name: "Cafe and Wifi API",
+      type: "REST API",
+      description: "Et omfattende REST API for å oppdage kafeer med pålitelige WiFi-tilkoblinger og fasiliteter.",
+      modalDescription: "En webapplikasjon designet for å hjelpe brukere med å finne kafeer som tilbyr pålitelig Wi-Fi, strømuttak og god kaffe. Plattformen lar brukere søke etter kafeer etter sted og se detaljert informasjon om hver kafés fasiliteter.",
+      tech: ["REST API", "Python", "Flask"],
+      links: {
+        github: "https://github.com/antoniorodr/cafe_and_wifi",
+        demo: "https://cafe-and-wifi.vercel.app",
+      },
+      details: {
+        role: "Full-stack-utvikler ansvarlig for både frontend og backend-utvikling. Bygget backend med Python og Flask for å håndtere API-forespørsler og administrere kafe-data. Utviklet frontend med HTML, CSS og JavaScript for å skape et intuitivt brukergrensesnitt. Distribuerte applikasjonen på Vercel for enkel tilgang og skalerbarhet.",
+        achievements: [
+          "Utviklet et RESTful API for å administrere og hente kafe-informasjon.",
+          "Laget en responsiv og brukervennlig frontend for å vise kafe-detaljer.",
+          "Implementerte søkefunksjonalitet for å la brukere finne kafeer basert på sted.",
+          "Distribuerte applikasjonen på Vercel, sikret rask og pålitelig tilgang.",
+          "Fikk erfaring i full-stack-utvikling, API-design og distribusjonsprosesser.",
+        ],
+      },
     },
-  },
-  {
-    name: "EV Hotels",
-    type: "Web Application",
-    description: "A web application designed to help electric vehicle owners locate hotels that offer charging stations, using interactive map data.",
-    modalDescription: "A web application that helps electric vehicle (EV) owners find hotels equipped with EV charging stations. Users can search for hotels by location and view details about available charging facilities.",
-    tech: ["Database", "Web Scraping", "API"],
-    image: "/static/pictures/portfolio/evhotels.png",
-    links: {
-      github: "https://github.com/antoniorodr/EV-Friendly-Hotels",
-      demo: "https://evhotels.onrender.com",
+    {
+      name: "Color Extractor",
+      type: "Webapplikasjon",
+      description: "Flask-webapplikasjon som aksepterer et opplastede bilde og gir topp 10 farger, hex-koder og prosenter.",
+      modalDescription: "En webapplikasjon som trekker ut fargepaletter fra ethvert bilde, og gir brukerne de dominerende fargene i HEX-format. Plattformen lar brukere laste opp bilder og umiddelbart se hovedfargene.",
+      tech: ["Flask", "Bildebehandling", "Python"],
+      image: "/static/pictures/portfolio/colorextractor.png",
+      links: {
+        github: "https://github.com/antoniorodr/color_extractor",
+        demo: "https://color-extractor-eta.vercel.app",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele prosjektet. Bygget frontend med Bootstrap og implementerte backend med Python og Flask for å håndtere bildeopplastinger og fargeuttrekkslogikk. Distribuerte prosjektet på Vercel for rask og enkel tilgang.",
+        achievements: [
+          "Utviklet en full-stack-applikasjon uavhengig, fra frontend til backend.",
+          "Implementerte bildeopplastingsfunksjonalitet med sanntids fargepalettuttrekk.",
+          "Designet et lett, responsivt og brukervennlig grensesnitt.",
+          "Distribuerte applikasjonen til Vercel, fikk erfaring med sky-distribusjon.",
+          "Forbedret problemløsningsevner ved å integrere bildebehandling og fargeanalysefunksjoner.",
+        ],
+      },
     },
-    details: {
-      role: "Solo developer responsible for the entire project. Built the frontend using Bootstrap and JavaScript, and implemented the backend with Python and Flask. Deployed the application on Render for reliable hosting.",
-      achievements: [
-        "Developed a full-stack application independently, from frontend to backend.",
-        "Implemented a search functionality to filter hotels based on location and charging facilities.",
-        "Designed a clean and user-friendly interface for an optimal user experience.",
-        "Deployed the application to Render, gaining experience with cloud deployment.",
-        "Enhanced problem-solving skills by integrating location-based search and data filtering features.",
-      ],
+    {
+      name: "LOTR Wiki",
+      type: "Webapplikasjon",
+      description: "En enkel LOTR Wiki bygget med Flask som henter informasjon fra the-one-api.dev.",
+      modalDescription: "En fan-fokusert wiki-plattform for å utforske karakterer, steder og lore fra Ringenes Herre-universet. Plattformen gir søkbar, strukturert informasjon med rike detaljer for entusiaster og nybegynnere.",
+      tech: ["Flask", "API-integrasjon", "Python"],
+      image: "/static/pictures/portfolio/lotr.png",
+      links: {
+        github: "https://github.com/antoniorodr/LOTR_Wiki",
+        demo: "https://lotr-tau.vercel.app",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele applikasjonen. Bygget frontend med Bootstrap og implementerte backend med Python og Flask. Distribuerte prosjektet på Vercel for rask og tilgjengelig ytelse.",
+        achievements: [
+          "Utviklet en fullt funksjonell full-stack-wiki-applikasjon uavhengig, fra backend til frontend.",
+          "Designet en responsiv og interaktiv UI med Bootstrap-komponenter og beste praksis.",
+          "Fikk erfaring i å bygge og strukturere en full-stack-webapplikasjon med Flask.",
+          "Distribuerte applikasjonen til Vercel, fikk erfaring med sky-distribusjon og ytelseoptimalisering.",
+        ],
+      },
     },
-  },
-  {
-    name: "Simple Flex Portfolio",
-    type: "Website",
-    description: "A responsive and minimalist portfolio website built using modern Flexbox layout techniques and design principles.",
-    modalDescription: "A responsive and minimalist portfolio website built using Flexbox layout. Designed to showcase projects and skills in a clean and accessible manner.",
-    tech: ["HTML", "CSS", "Flexbox"],
-    image: "/static/pictures/portfolio/flex.png",
-    links: {
-      github: "https://github.com/antoniorodr/flex-portfolio",
-      demo: "https://antoniorodr.github.io/flex-portfolio/",
+    {
+      name: "EV Hotels",
+      type: "Webapplikasjon",
+      description: "En webapplikasjon designet for å hjelpe elbileiere med å finne hoteller med ladestasjoner, ved bruk av interaktivt kartdata.",
+      modalDescription: "En webapplikasjon som hjelper elbil-eiere (EV) med å finne hoteller utstyrt med EV-ladestasjoner. Brukere kan søke etter hoteller etter sted og se detaljer om tilgjengelige ladefasiliteter.",
+      tech: ["Database", "Web Scraping", "API"],
+      image: "/static/pictures/portfolio/evhotels.png",
+      links: {
+        github: "https://github.com/antoniorodr/EV-Friendly-Hotels",
+        demo: "https://evhotels.onrender.com",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele prosjektet. Bygget frontend med Bootstrap og JavaScript, og implementerte backend med Python og Flask. Distribuerte applikasjonen på Render for pålitelig hosting.",
+        achievements: [
+          "Utviklet en full-stack-applikasjon uavhengig, fra frontend til backend.",
+          "Implementerte søkefunksjonalitet for å filtrere hoteller basert på sted og ladefasiliteter.",
+          "Designet et rent og brukervennlig grensesnitt for en optimal brukeropplevelse.",
+          "Distribuerte applikasjonen til Render, fikk erfaring med sky-distribusjon.",
+          "Forbedret problemløsningsevner ved å integrere stedsbasert søk og datafiltreringsfunksjoner.",
+        ],
+      },
     },
-    details: {
-      role: "Sole developer responsible for the entire project. Utilized HTML5 and CSS3 to create a flexible layout that adapts seamlessly across devices.",
-      achievements: [
-        "Developed a fully responsive portfolio layout using Flexbox, ensuring optimal viewing experiences on various screen sizes.",
-        "Emphasized accessibility and semantic HTML to enhance user experience and SEO performance.",
-        "Implemented a minimalist design approach to focus on content and projects.",
-        "Gained hands-on experience in creating a real-world, production-ready static website.",
-      ],
+    {
+      name: "Simple Flex Portfolio",
+      type: "Nettside",
+      description: "En responsiv og minimalistisk portfolio-nettside bygget med moderne Flexbox-layoutteknikker og designprinsipper.",
+      modalDescription: "En responsiv og minimalistisk portfolio-nettside bygget med Flexbox-layout. Designet for å vise prosjekter og ferdigheter på en ren og tilgjengelig måte.",
+      tech: ["HTML", "CSS", "Flexbox"],
+      image: "/static/pictures/portfolio/flex.png",
+      links: {
+        github: "https://github.com/antoniorodr/flex-portfolio",
+        demo: "https://antoniorodr.github.io/flex-portfolio/",
+      },
+      details: {
+        role: "Aleneutvikler ansvarlig for hele prosjektet. Brukte HTML5 og CSS3 for å skape en fleksibel layout som tilpasser seg sømløst på tvers av enheter.",
+        achievements: [
+          "Utviklet en fullt responsiv portfolio-layout med Flexbox, sikret optimale visningsopplevelser på ulike skjermstørrelser.",
+          "Vektla tilgjengelighet og semantisk HTML for å forbedre brukeropplevelse og SEO-ytelse.",
+          "Implementerte en minimalistisk designtilnærming for å fokusere på innhold og prosjekter.",
+          "Fikk praktisk erfaring i å skape en virkelig, produksjonsklar statisk nettside.",
+        ],
+      },
     },
-  },
-];
+  ],
+};

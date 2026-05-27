@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "projects": "Prosjekter",
+    "resume": "CV",
+    "downloadCv": "Last ned CV",
+    "cvEnglish": "Engelsk CV",
+    "cvNorwegian": "Norsk CV",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hei, verden! Jeg er",
+    "viewProjects": "Se prosjektene mine",
+    "getInTouch": "Ta kontakt"
+  },
+  "resume": {
+    "title": "CV",
+    "subtitle": "Backend-utvikler med erfaring innen finans og helse",
+    "contact": "Kontakt",
+    "location": "Sted",
+    "phone": "Telefon",
+    "email": "E-post",
+    "experience": "Erfaring",
+    "education": "Utdanning",
+    "viewCourses": "Se fullførte kurs"
+  },
+  "projects": {
+    "title": "Prosjekter",
+    "subtitle": "Et utvalg av ting jeg har bygget og bidratt til",
+    "readMore": "Les mer",
+    "github": "GitHub",
+    "website": "Nettside",
+    "liveDemo": "Live Demo",
+    "previous": "Forrige",
+    "next": "Neste"
+  },
+  "modal": {
+    "completedCourses": "Fullførte kurs",
+    "myRole": "Min rolle",
+    "technologies": "Teknologier",
+    "keyAchievements": "Nøkkelresultater og lærdommer",
+    "links": "Lenker"
+  }
+}

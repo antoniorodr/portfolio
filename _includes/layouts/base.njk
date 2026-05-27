@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="{{ locale }}" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,32 @@
   <link rel="icon" type="image/x-icon" href="/static/pictures/portfolio.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="/static/css/style.css">
 
   <script>
-    (function() {
+    (function () {
       const saved = localStorage.getItem('theme');
       const theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
       document.documentElement.setAttribute('data-theme', theme);
     })();
   </script>
+
+  <script>
+    (function () {
+      const currentPath = window.location.pathname;
+      if (currentPath === '/' || currentPath === '/index.html') {
+        const saved = localStorage.getItem('lang');
+        const lang = saved || (navigator.language.startsWith('no') ? 'no' : 'en');
+        window.location.href = '/' + lang + '/';
+      }
+    })();
+  </script>
 </head>
+
 <body>
   {% include "partials/navbar.njk" %}
 
@@ -34,4 +49,5 @@
 
   <script src="/static/js/main.js"></script>
 </body>
+
 </html>

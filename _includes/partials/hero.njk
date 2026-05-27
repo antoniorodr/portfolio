@@ -5,17 +5,15 @@
         <img src="{{ site.avatar }}" alt="{{ site.name }}" class="avatar-img" loading="eager">
       </div>
       <div class="hero-content">
-        <p class="hero-greeting">Hello, world! I'm</p>
+        <p class="hero-greeting">{{ "hero.greeting" | t(locale) }}</p>
         <h1 class="hero-name">{{ site.name }}</h1>
         <p class="hero-title">{{ site.title }}</p>
         <p class="hero-bio">
-          I'm a passion-driven developer with a strong interest in backend development. 
-          I love creating innovative solutions and exploring new technologies. 
-          When I'm not coding, you'll find me working on exciting projects or learning something new in the tech world.
+          {{ site.bio[locale] }}
         </p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View my projects</a>
-          <a href="mailto:{{ site.email }}" class="btn btn-secondary">Get in touch</a>
+          <a href="#projects" class="btn btn-primary">{{ "hero.viewProjects" | t(locale) }}</a>
+          <a href="mailto:{{ site.email }}" class="btn btn-secondary">{{ "hero.getInTouch" | t(locale) }}</a>
         </div>
       </div>
     </div>
