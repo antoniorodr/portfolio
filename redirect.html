@@ -1,0 +1,28 @@
+---
+permalink: /index.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio Rodriguez - Developer Portfolio</title>
+  <script>
+    (function () {
+      const saved = localStorage.getItem('lang');
+      const lang = saved || (navigator.language.startsWith('no') ? 'no' : 'en');
+      window.location.href = '/' + lang + '/';
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/en/">
+  </noscript>
+</head>
+
+<body>
+  <p>Redirecting... <a href="/en/">Click here if not redirected</a></p>
+</body>
+
+</html>
