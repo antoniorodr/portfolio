@@ -1,6 +1,9 @@
 module.exports = {
   name: "Antonio Rodriguez",
-  title: "Developer & Technology Enthusiast",
+  title: {
+    en: "Developer & Technology Enthusiast",
+    no: "Utvikler og teknologientusiast",
+  },
   description: "Backend developer with experience in finance and healthcare. Passionate about creating innovative solutions and exploring new technologies.",
   url: "https://antoniorodriguez.no",
   email: "kontakt@antoniorodriguez.no",
@@ -15,6 +18,6 @@ module.exports = {
   avatar: "/static/pictures/avatar.jpeg",
   bio: {
     en: "I'm a passion-driven developer with a strong interest in backend development. I love creating innovative solutions and exploring new technologies. When I'm not coding, you'll find me working on exciting projects or learning something new in the tech world.",
-    no: "Jeg er en lidenskapsdrevet utvikler med stor interesse for backend-utvikling. Jeg elsker å lage innovative løsninger og utforske nye teknologier. Når jeg ikke koder, finner du meg som jobber med spennende prosjekter eller lærer noe nytt i tech-verdenen.",
+    no: "Jeg er en engasjert utvikler med stor interesse for backend-utvikling. Jeg brenner for å lage innovative løsninger og utforske nye teknologier. På fritiden jobber jeg gjerne med spennende prosjekter eller lærer noe nytt innen tech.",
   },
 };

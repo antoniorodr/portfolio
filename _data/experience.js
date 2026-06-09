@@ -57,25 +57,25 @@ module.exports = {
   no: {
     education: [
       {
-        title: "Fullførte kurs",
+        title: "Gjennomførte kurs",
         period: "2024-nå",
         institution: "Online (Udemy, MOOCs)",
         description:
-          "Kontinuerlig læring gjennom online plattformer, som dekker programmering, databaser og skyteknologier.",
+          "Kontinuerlig læring gjennom nettbaserte plattformer innen programmering, databaser og skyteknologi.",
       },
       {
         title: "Sykepleierutdanning",
         period: "2013-2017",
         institution: "Universidad de Cadiz, Cadiz, Spania",
         description:
-          "Bachelorgrad i sykepleie med klinisk praksis i ulike helsetjenestemiljøer.",
+          "Bachelorgrad i sykepleie med klinisk praksis fra ulike helseinstitusjoner.",
       },
       {
         title: "Laboratorietekniker",
         period: "2011-2013",
         institution: "IES Sancti Petri, San Fernando, Spania",
         description:
-          "Faglig opplæring i kliniske laboratorieprosedyrer og analyse.",
+          "Yrkesfaglig utdanning innen kliniske laboratorieprosedyrer og analyse.",
       },
     ],
     experience: [
@@ -105,7 +105,7 @@ module.exports = {
         period: "2018-2022",
         company: "Ulike steder, Norge",
         description:
-          "Jobbet som sykepleier på flere helseinstitusjoner i Norge, med variert klinisk erfaring.",
+          "Jobbet som sykepleier ved flere helseinstitusjoner i Norge med variert klinisk erfaring.",
       },
     ],
   },

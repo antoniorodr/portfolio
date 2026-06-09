@@ -8,24 +8,24 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "greeting": "Hei, verden! Jeg er",
+    "greeting": "Hei! Jeg heter",
     "viewProjects": "Se prosjektene mine",
     "getInTouch": "Ta kontakt"
   },
   "resume": {
     "title": "CV",
-    "subtitle": "Backend-utvikler med erfaring innen finans og helse",
+    "subtitle": "Backend-utvikler med erfaring fra finans og helsesektoren",
     "contact": "Kontakt",
     "location": "Sted",
     "phone": "Telefon",
     "email": "E-post",
     "experience": "Erfaring",
     "education": "Utdanning",
-    "viewCourses": "Se fullførte kurs"
+    "viewCourses": "Se gjennomførte kurs"
   },
   "projects": {
     "title": "Prosjekter",
-    "subtitle": "Et utvalg av ting jeg har bygget og bidratt til",
+    "subtitle": "Et utvalg av prosjekter jeg har bygget og bidratt til",
     "readMore": "Les mer",
     "github": "GitHub",
     "website": "Nettside",
@@ -34,10 +34,10 @@
     "next": "Neste"
   },
   "modal": {
-    "completedCourses": "Fullførte kurs",
+    "completedCourses": "Gjennomførte kurs",
     "myRole": "Min rolle",
     "technologies": "Teknologier",
-    "keyAchievements": "Nøkkelresultater og lærdommer",
+    "keyAchievements": "Viktige resultater og erfaringer",
     "links": "Lenker"
   }
 }
